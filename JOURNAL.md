@@ -23,7 +23,7 @@ Picture 3:
 Mounting to the airframe: Each leg is mounted with two m5 bolts. This allows for the quick replacement of legs in the field, which will increase the tempo of test flights, as it is likely that the legs will commonly break. 
 
 Future work:
-The detail in the CAD isn't full, fasteners and some parts are missing, so the next step will be to add them.
+The detail in the CAD isn't full, fasteners and some parts are missing, so the next step will be to add them. Moreover, some of the parts are crude and not ready for manufacturing; next steps for these will be to refine their design and strengthen weak points. 
 
 Time spent:
 6 hours (My arse wasn't in school cause I was sick)
