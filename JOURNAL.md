@@ -25,7 +25,38 @@ Mounting to the airframe: Each leg is mounted with two m5 bolts. This allows for
 Future work:
 The detail in the CAD isn't full, fasteners and some parts are missing, so the next step will be to add them. Moreover, some of the parts are crude and not ready for manufacturing; next steps for these will be to refine their design and strengthen weak points. 
 
-Time spent:
-6 hours (My arse wasn't in school cause I was sick)
-
 **Total time spent: 6h**
+
+# May 24th: Finished up the airframe and legs
+
+This is a short journal entry; not much to talk about, but this morning I was able to squeeze in some work to finish the airframe and leg work I did on Thursday. I added the landing leg caps, mounting holes, strengthened some parts, assigned materials, added the nosecone, and cleaned up the appearance. 
+
+Picture 1: 
+![Screenshot 2025-05-24 1 38 59 PM](https://github.com/user-attachments/assets/ad3bb6d5-7a63-4975-8b29-9d933e38aa49)
+
+Nosecone: Designed with 1.5mm thick walls to minimize mass  
+
+Picture 2:
+![Screenshot 2025-05-24 2 29 45 PM](https://github.com/user-attachments/assets/cc2f8575-c8b4-48f4-b0ad-d70e3422415a)
+
+Landing leg feet: Round to allow for consistent contact patch as legs compress. Flat spot is to make printing easier. 
+
+
+Picture 3: 
+![Screenshot 2025-05-24 2 31 12 PM](https://github.com/user-attachments/assets/1fef28f8-ec1c-4526-a7c6-5394c1509e0b)
+
+Mass Budget allocation: Currently I'm trying to stay within 800 grams for the airframe, and I'm cutting it close, but I'm hoping that the spare 70 grams will be enough for the flight computer and its power. This mass figure also includes an old version of the gimbal (from the last rocket) so mass should be able to be brought down. 
+
+Picture 4: 
+![image](https://github.com/user-attachments/assets/af06b746-efb4-4cd7-9f60-01dee7446c14)
+
+Here's just a picture of the airframe as it stands right now. 
+
+Next steps: The next thing on the agenda is to redesign the gimbal for smaller 24mm rocket motors, lower backlash by swapping the servo wire for some actual linkages, and shrinking the overall design so it doesn't need airframe cutouts. 
+
+
+**Total time spent: 45min**
+
+
+
+
