@@ -57,6 +57,20 @@ Next steps: The next thing on the agenda is to redesign the gimbal for smaller 2
 
 **Total time spent: 45min**
 
+# May 25nd: Designed the new gimbal
+Today I redesigned my older 29mm motor mount to fit the 24mm estes D motors. Before starting this redesign, I committed to two main design goals: one, the gimbal should be able to completely fit and gimbal (with a range of 5 degrees in all four directions) inside a three inch airframe without airframe cutouts as these look bad and can create torque on the vehicle causing roll; two, the servos should be directly connected to the motor mount and inner gimbal by flat linkage bars rather than linkage wires to minimize the issues, such as movement delay and backlash, made worse by the flexibility of the wires on the original mount and the shifting of the wire bends inside the servo horn holes. As the motor was smaller, it allowed me to relatively easily compact the overall design to fit it within the 3in, while removing the cutouts. To limit the backlash, I replaced the wire with solid linkage bars mounted on the end with small shoulder bolts, thus removing the issue of wirebending and the issue of the wires shifting in the small, loosely toleranced, holes. Not only does the gimbal design fit my original specifications, it's further able to gimbal to 6 degrees, which is a small, but nice upgrade over the last system which could only gimbal 5 degrees. The linkage change also has a nice quality of life improvement; the old wires were a real pain to bend accurately, and it was pretty easy to injure myself bending them. Now, with the linkage bars it should be a far more simple procedure to connect the gimbal to the servos. 
+New gimbal design (left) vs old gimbal (right):
 
+![Gimbal Assembly](https://github.com/user-attachments/assets/814287c2-58a0-4e03-b8fb-fd12c96e8b4c) ![P O G G E R S  V4 Assembly](https://github.com/user-attachments/assets/48a426f8-626b-4f40-affc-cf48e103b18f)
 
+As visible, these are two very similar designs apart from the previously mentioned changes: both have a flat bottom plane allowing for easy printing and zeroing, both use the same Hitech HS5055's for actuation. (while these are costly, they have low backlash and a high frequency update rate, moreover, I already have a few of them)
+
+![Rocket Assembly](https://github.com/user-attachments/assets/566952a3-9654-4072-970b-119c8264d7d8)
+
+Heres a picture of the gimbal in the airframe; this is starting to look pretty cool I'm not going to lie.
+
+Future plans:
+Time to start working on the flight computer! I have some plans, but it will be my first time designing and making a fully integrated board without any form of breakout. 
+
+**Total time spent: 3hr**
 
