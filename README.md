@@ -1,2 +1,2 @@
 # Sparrow-TVC-Hopper
-A thrust vector controlled model rocket designed to hop, launch and land to a low altitude, under power from a COTS solid rocket motor. 
+This is a thrust vector controlled rocket that should be capable of launch and landing, under motor power. Rather than depending on passive stability, this rocket gimbals the solid rocket motor (An Estes D12 black powder motor) to change the thrust direction, creating a torque that will change the direction of the rocket to keep it pointing straight up. The rocket will fire it's first motor to launch, and then, based on measurements of altitude, fire the second motor to slow it down for landing. 
