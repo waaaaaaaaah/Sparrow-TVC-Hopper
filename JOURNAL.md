@@ -74,3 +74,17 @@ Time to start working on the flight computer! I have some plans, but it will be 
 
 **Total time spent: 3hr**
 
+# May 26th: Created a majority of the flight computer's schematic
+Today I worked on the schematic for the flight computer. In order for the rocket to know its orientation so it can stabilize itself, it needs an IMU. I selected the BMI088 for its accuracy and shock resistance. Moreover, it has an existing arduino library so programming will be, hopefully, easy. Furthermore, the accelerometer on the IMU gives me the ability to integrate acceleration twice to find altitude, while a gyro on its own would only let me integrate to find orientation. To measure altitude I decided on the BMP390 barometer as it's incredibly low noise for a barometer (Just +/- 0.1m based on my tests!). Just like the IMU, it also already has an existing library. The reason to have two measurements of altitude is so I can fuse the two into a hopefully more accurate measurement (The barometer is noisy, while the acceleration integration drifts, so the hope is that the two can be fused together for a measurement that's less noisy than the barometer and less drifty than the integration). The rocket needs to know its altitude incredibly accurately so it can time the descent burn so the rocket doesn't land too hard or bounce. For the main processor I decided on the RP2040 as it is incredibly well documented and easy to design, while being very powerful, and cheap (each chip is only 80 cents). To power the servo motors, I'm using a buck converter that brings the battery voltage down to 5 volts, and to power the mcu and the sensors, I'm using a small linear regulator that will provide a low noise power source to the sensitive IC's. For data logging, I also added an sd card mount, and for the firing of e-matches to ignite the motor, I added two mosfets that will connect them to ground, allowing enough current to flow to start the match burning. 
+Picture One: The overall schematic
+![image](https://github.com/user-attachments/assets/52971367-9f40-4852-b5a1-a797861d56e4)
+
+Picture Two: The sensor hookups. I decided to use I2C for the sensors as it requires less hookups, and the rp2040 doesn't have enough free SPI outputs for the sensors and the sd card thats used for data storage
+![image](https://github.com/user-attachments/assets/d489ada2-9521-40d2-942f-4f383516b158)
+
+Picture Three: The IO. I have added 6 pwm output headers. This would allow for the control of 6 servos, covering the 2 minimum servos the rocket needs, and allowing for the use of this flight computer in future projects. The two pyro (Pyrotechnic Electronic Matches) screw terminals are also future proofing; I only need one pyro channel, but two allows me to use this computer on more conventional high powered rockets with dual deploy. The usb allows me to program the RP2040. 
+![image](https://github.com/user-attachments/assets/3b38c6a1-1820-45a8-a723-89f3f5c80816)
+
+Future Plans: The schematic still needs a design review; there are more than likely a few pcb breaking errors. Moreover, the LED's still haven't been added. Tomorrow, I would like to get both done so I can start routing.
+
+**Total time spent: 4hr**
