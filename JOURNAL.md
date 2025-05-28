@@ -106,6 +106,6 @@ Picture three:
 
 The io (servos, battery power, and pyro plugs). This was kinda chill to do because of all the surplus space. It's not pretty, but it was nice to do. 
 
-
+Future Plans: I should redo at least part of this routing to make it prettier. Maybe now that I'm used to this board, I can make it smaller to cut down on the dead space. Regardless of whether or not I re-route, I need to double and triple check the design. 
 **Total time spent: 5hr**
 
