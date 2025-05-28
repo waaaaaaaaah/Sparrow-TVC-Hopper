@@ -88,3 +88,24 @@ Picture Three: The IO. I have added 6 pwm output headers. This would allow for t
 Future Plans: The schematic still needs a design review; there are more than likely a few pcb breaking errors. Moreover, the LED's still haven't been added. Tomorrow, I would like to get both done so I can start routing.
 
 **Total time spent: 4hr**
+
+# May 27th: Routed the dang thing (poorly) - I plan to redo
+Today I did the first draft of the routing. Everything is connected, but I plan on doing it again; it's so garbage. This process started with the placement of the usb port and the RP2040 and the routing of the USB differential pair. This should come first as the USB differential pair should be precise to make sure the board can communicate through USB as fast as possible. Then I added the decoupling capacitors to the RP2040. The decoupling capacitors are very important to keep the power to the MCU smooth and denoised, and placing them as close to the chip as possible means that they work the most effectively. I did them second as placing them early helps ensure I have room to place them close. Then I added the SD card, Flash, clock crystal, and boot and reset buttons. These didn't need to be in any specific order, but I wanted to make sure the rp2040's peripherals were wired correctly and efficiently; I didn't want to route the connections for these around anything else. Then I wired up the sensors. I just made sure the I2C traces were roughly the same length and crossed at right angles. Finally I wired up the non-signal wires and the voltage regulators (I also did the PWM but it's not very sensitive). As these wires aren't very sensitive to routing and noise, they could be safely routed around everything else without major issue. 
+Picture One:
+![image](https://github.com/user-attachments/assets/5144ab34-31ef-4862-a4a8-53e140886581)
+
+The entire board. As you can see it's two layers (to save money). I chose to make it bigger than it needed to be to save time routing, and as it remains under the Pcbway order minimum, it's still just 5 dollars. 
+
+Picture Two:
+![image](https://github.com/user-attachments/assets/f3ecc086-fccf-4aa2-8f50-c7be1fc01999)
+
+The RP2040 and its close peripherals. This was not fun to route, and I can't imagine it will be fun to solder. No nice design decisions here; this just kinda sucked to do.
+
+Picture three:
+![image](https://github.com/user-attachments/assets/1b4a05a5-9f24-416c-9e5f-64e1f1bd4c89)
+
+The io (servos, battery power, and pyro plugs). This was kinda chill to do because of all the surplus space. It's not pretty, but it was nice to do. 
+
+
+**Total time spent: 5hr**
+
