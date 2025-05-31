@@ -110,3 +110,28 @@ Future Plans: I should redo at least part of this routing to make it prettier. M
 
 **Total time spent: 5hr**
 
+# May 30th: Redid the PCB routing
+Today I redid the routing and prettied up the board. Not much in terms of design choices today, but I think the board looks really cool now. Mostly everything is the same for the actual routing order, but I utilized more area fills, especially for servo power, to clean up the design and increase current capacity and improve thermals. I also planned component placement more carefully, so it has less random/gross traces and vias. There was also some more pretty work done, but that will be saved for the pictures. 
+
+Picture One:
+![image](https://github.com/user-attachments/assets/e6817838-f6d0-410b-a59a-9b2ceb2b361e)
+
+The new board layout. This one is functionally identical to the other routing, but it looks way cleaner. 
+
+Picture Two:
+![image](https://github.com/user-attachments/assets/1a34f824-6495-4dfc-982d-7db01329f602)
+
+The major change: the use of power planes for the servos so I avoid using large and gross looking current carrying traces.
+
+Picture 3:
+![image](https://github.com/user-attachments/assets/5bc87c22-93f1-4920-8e68-fb7a888716bb)
+
+Here's the silkscreen art I added to the back of the board; it adds nothing practical, but I think it looks super cool.
+
+Picture 4:
+![image](https://github.com/user-attachments/assets/f4ffd058-ddbe-4337-8a5f-b2563537d745)
+
+Here's the front of the board; nothing special here but some cute lil pictures. 
+Future Work: I plan on starting updating my old sim to work with a landing rocket so I can figure out the fine specs of the rocket. 
+
+**Total time spent: 6hr**
