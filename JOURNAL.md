@@ -135,3 +135,12 @@ Here's the front of the board; nothing special here but some cute lil pictures.
 Future Work: I plan on starting updating my old sim to work with a landing rocket so I can figure out the fine specs of the rocket. 
 
 **Total time spent: 6hr**
+
+# May 31st: Designed the Flight Computer Mount
+Today I designed the avionics mounting for the rocket. It wasn't a lot, but it marks the completion of the mechanical design of the rocket; the cad contains all of the parts to be manufactured and assembled.
+![Avbay Assembly](https://github.com/user-attachments/assets/2ef9d2c1-c48e-4dd6-8b53-e48ac4f3f551)
+
+Future work: Remains the same as yesterday, I now need to update my flight sim so I can model the flight profile of the hopper. 
+
+**Total time spent: 30mins**
+
