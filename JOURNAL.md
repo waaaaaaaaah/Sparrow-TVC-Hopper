@@ -144,3 +144,17 @@ Future work: Remains the same as yesterday, I now need to update my flight sim s
 
 **Total time spent: 30mins**
 
+# June 19th: Reviewed the Flight Computer Design
+Been a while, but now that the school year is finished and my wisdom teeth are out I can get back into this rocket. Today, based on a design review, I tweaked the design of the pcb. First of all, I cleaned up the buck converter layout to make it less electrically noisy and more stable. By moving the components, I was able to minimize the 'loop' sizes of the buck converter circuit which minimizes the strength of electromagnetic interference coming from the converter. I also added esd protection to the usb line, which will make the board more resistant to instabilities and overvoltages in the usb line. Moreover, I moved from 2 layers to 4 layers and used the inner two layers as ground planes, which further reduces noise and improves the electrical stability of the board. While this adds cost to the board, it still fits my BOM as the legs were cheaper than originally planned. 
+
+Picture one:
+![Screenshot 2025-06-19 222852](https://github.com/user-attachments/assets/f4dd181e-e0fe-4cad-9ae9-08d4988e359a)
+This is the new circuit for the buck converter; the components, specifically the inductor and input capacitors are better placed to minimize the loop sizes, which cleans up electrical noise. 
+
+Picture Two:
+![Screenshot 2025-06-19 222918](https://github.com/user-attachments/assets/ff26d686-7712-490a-a5c9-be50891796eb)
+This is the new usb esd protection chip. It protects the rp2040 from esd over the usb port. 
+
+Future Work: The rocket itself is designed, now to work on upgrading the sim. 
+**Total time spent: 2hr**
+
