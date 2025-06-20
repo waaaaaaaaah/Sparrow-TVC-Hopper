@@ -158,3 +158,17 @@ This is the new usb esd protection chip. It protects the rp2040 from esd over th
 Future Work: The rocket itself is designed, now to work on upgrading the sim. 
 **Total time spent: 2hr**
 
+# June 20th (part one): Added some more fine details to the flight computer
+I just cleaned up some more small details of the board to reduce noise and improve stability. First of all, I very slightly adjusted the ground paths for the buck converter to help with interference, and I added a via field to improve the connections between all the ground planes and minimize return paths, which also reduces noise. 
+
+Picture one:
+![image](https://github.com/user-attachments/assets/9bf484ca-f205-47f8-8794-a487c7523771)
+The via grid. This is just a grid of vias that connect all the ground layers together, improving signal integrity and reducing noise by shortening ground return paths. 
+
+Picture two:
+![image](https://github.com/user-attachments/assets/1bb4376a-bf8a-4227-ba55-ae578c806765)
+This depicts the use of a net stitch to use a trace to route ground from the feedback resistors (the top left pair of resistors) to the ground of the buck converter (center right). The trace is the bottom layer trace (the blue one) running horizontally under L1 (the inductor). This use of a trace rather than just connecting the resistors to the ground plane ensures that there is minimal interference between the feedback and other grounds, increasing the stability of the buck converter. 
+
+Future Work: Today I've started working on the sim, I already have a lot of the core stuff built for my last rockets, so it's only relativelly small modification to bring it up to work with landing. 
+**Total time spent: 30m**
+
