@@ -170,5 +170,20 @@ Picture two:
 This depicts the use of a net stitch to use a trace to route ground from the feedback resistors (the top left pair of resistors) to the ground of the buck converter (center right). The trace is the bottom layer trace (the blue one) running horizontally under L1 (the inductor). This use of a trace rather than just connecting the resistors to the ground plane ensures that there is minimal interference between the feedback and other grounds, increasing the stability of the buck converter. 
 
 Future Work: Today I've started working on the sim, I already have a lot of the core stuff built for my last rockets, so it's only relativelly small modification to bring it up to work with landing. 
+
 **Total time spent: 30m**
+
+# June 20th (part two): Added the Altitude and Second motor simulation to my tvc rocket sim
+There are two major simplifying factors that make the writing of the simulation much easier than it sounds like it should be. For one, the rocket is going to be moving incredibly slow for a rocket, as well as being aerodynamic and dense, so the force of drag will be negligible. This means that I can ignore aero dynamic effects for the flights I'm planning and so this knocks a large part of the simulation difficulty off. Furthermore, as control is done by vectoring the motor, the function relating gimbal angle and torque is very simple (just a sine function of the angle multiplied by the current thrust of the motor), to contrast with fin steering which is far more complex to model as fluids are not fun and inherently chaotic. To summarize, the simulation is considerably easier than it sounds because I don't need to work with fluid dynamics. 
+	I'm not starting from scratch either; I'm basing the sim on my old simulation written for my first thrust vectoring rocket. This sim already handles the attitude simulation as well as the motor thrust curve and the flight control system and its lag. This means that to incorporate altitude simulation, I just need to find and integrate the acceleration to find velocity, which can be integrated to find position. As the motor is already modeled, it's a simple matter of adding a mass value for the rocket and simply finding acceleration using Newton's second law. There is a bit of trig to account for the rocket's current angle and the angle of the gimbal, but overall it's a simple addition. I also had to add the timing for the second motor ignition, but this again was a relatively simple addition as the sim runs on fixed time steps.
+	The sim is just one python file (I'm not the greatest coder) and it just integrates angular and vertical acceleration at small finite time steps. It then outputs the angle, altitude, vertical velocity, and thrust, versus time as graphs. Using this sim and the known attributes of the rocket, I am able to predict the tuning variables for the control system. 
+  Picture One:
+  ![image](https://github.com/user-attachments/assets/f26de3f5-8581-4717-8f9a-9903dba29d72)
+  Here are some example outputs from the sim; top left is alt, bottom left is angle, top right is vertical velocity, and bottom right is the thrust. 
+
+The code has been added to the repo if people want to look at it.
+Future Plans: Time to build this thang. 
+**Total time spent: 3hr**
+
+
 
