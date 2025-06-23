@@ -14,7 +14,7 @@ Inspired by Joe Barnard’s Scout series of [rockets](https://www.youtube.com/wa
 # Accessing the Design Files:
 PCB: Download and extract the zipped KiCad project and open the KiCad project file in the folder
 
-CAD: Download and install the STEP file, opening it in a cad software of your choice, alternatively, open the Onshape link in your browser 
+CAD: Download and install the STEP file, opening it in a cad software of your choice, alternatively, open the [Onshape](https://cad.onshape.com/documents/2aeacba1c4f76bcd0eaa2e2a/w/99221f72a57f73758bb625d3/e/b11574b523cce575647fe841?renderMode=0&uiState=6859ca07dac566757f2ac7bd) link in your browser 
 
 # BOM
 
